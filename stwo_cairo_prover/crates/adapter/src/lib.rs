@@ -63,7 +63,8 @@ impl PublicSegmentContext {
                 BuiltinName::mul_mod => present[10] = true,
                 BuiltinName::segment_arena => {
                     // Do nothing.
-                }
+                },
+                BuiltinName::system => {}
             }
         }
         Self { present }
