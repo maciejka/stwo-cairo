@@ -46,6 +46,7 @@ pub struct BuiltinSegments {
     pub poseidon: Option<MemorySegmentAddresses>,
     pub range_check_bits_96: Option<MemorySegmentAddresses>,
     pub range_check_bits_128: Option<MemorySegmentAddresses>,
+    pub system: Option<MemorySegmentAddresses>,
 }
 
 impl BuiltinSegments {
