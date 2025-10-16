@@ -38,7 +38,7 @@ pub struct ProverInput {
     pub relocated_trace: Vec<RelocatedTraceEntry>,
 }
 
-const N_PUBLIC_SEGMENTS: usize = 12;
+const N_PUBLIC_SEGMENTS: usize = 11;
 
 /// Represents the pointer arguments of the `main` function.
 #[derive(Debug, Serialize, Deserialize, Clone)]
@@ -64,7 +64,7 @@ impl PublicSegmentContext {
                 BuiltinName::segment_arena => {
                     // Do nothing.
                 },
-                BuiltinName::system => present[11] = true,
+                BuiltinName::system => {},
             }
         }
         Self { present }
